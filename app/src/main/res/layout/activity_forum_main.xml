@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Forum_Main"
+    android:orientation="horizontal">
+
+<!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_above="@id/bottom_nav"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/postRV_user_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="true"
+
+                />
+
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/bottom_nav"
+
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/menu_bottom_nav"
+            app:itemTextColor="#fff"
+            app:itemIconTint="#fff"
+            app:itemIconSize="36dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="#A30000"
+        app:elevation="10dp"
+        app:fabSize="normal"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

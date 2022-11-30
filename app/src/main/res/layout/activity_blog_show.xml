@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Blog_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:layout_above="@+id/bottom_nav"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!-- Thanh tim kiem -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                >
+
+                <!-- Edittext tim kiem -->
+                <EditText
+                    android:id="@+id/searchEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:color/transparent"
+                    android:padding="15dp"
+                    android:textColor="#666"
+                    android:hint="Tìm kiếm bài viêt"
+                    android:textColorHint="#666"
+                    android:maxLines="1"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_clearSearch"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#eee"
+                    android:src="@drawable/ic_close"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/btn_search"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#eee"
+                    android:src="@drawable/ic_search"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <!-- Hien thi bai viet -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/postRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Theme.AppCompat.Light"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/row_post_blogger">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn_xemthem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF6347	"
+                android:text="Xem thêm bài khác"
+                android:textColor="#FFF">
+            </Button>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/bottom_nav"
+
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottom_nav"
+        app:itemTextColor="#fff"
+        app:itemIconTint="#fff"
+        app:itemIconSize="36dp"
+        />
+
+</RelativeLayout>

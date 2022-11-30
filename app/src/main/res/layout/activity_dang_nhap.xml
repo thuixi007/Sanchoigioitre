@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangNhap"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/lockscreen"
+    >
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgview_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_sanchoi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/black"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textview12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Đăng nhập Sân chơi giới trẻ"
+        android:textColor="#293333"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imgview_logo"
+        android:gravity="center"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/textbox_login_ten_dang_nhap"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/textview12"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/forget"
+        android:drawableStart="@drawable/ic_person"
+        android:layout_centerHorizontal="true"
+        android:hint=" Tên đăng nhập"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColor="#722F37"
+        android:textColorHint="#7E7C73"
+        android:textSize="18sp"
+        android:textStyle="bold"></EditText>
+
+    <EditText
+        android:id="@+id/textbox_login_mat_khau"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/forget"
+        android:drawableStart="@drawable/ic_security"
+        android:hint=" Mật khẩu"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textColor="#722F37"
+        android:textColorHint="#7E7C73"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        android:layout_below="@id/textbox_login_ten_dang_nhap"
+        android:layout_centerHorizontal="true"
+        ></EditText>
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Ghi nhớ tài khoản và mật khẩu"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textbox_login_mat_khau"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:id="@+id/btn_dang_nhap_main"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/button"
+        android:text="Đăng Nhập"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"></Button>
+
+    <TextView
+        android:id="@+id/dang_ki_ngay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_dang_nhap_main"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="-2dp"
+        android:gravity="center"
+        android:text="Bạn chưa có tài khoản? Đăng kí ngay"
+        android:textColor="#293333"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

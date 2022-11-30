@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.AppCompat.Light"
+    android:background="@drawable/button1"
+    android:layout_marginBottom="5dp"
+    android:padding="10dp"
+    android:layout_marginTop="5dp"
+    >
+
+
+
+
+    <!-- Tên bài đăng -->
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Tiêu đề bài đăng"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        >
+    </TextView>
+
+    <!-- người đăng và thời gian -->
+    <TextView
+        android:id="@+id/publishInfoTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTV"
+        android:text="Tên người đăng"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#FFF"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageTV"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/titleTV"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:adjustViewBounds="true"
+        android:background="#808080"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/descriptionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publishInfoTV"
+        android:layout_toEndOf="@id/imageTV"
+        android:layout_marginTop="1dp"
+        android:maxLines="6"
+        android:text="Nhiều đêm dài sương mùa đông, tuyết rơi hoài lòng ai đang nhớ nhà Đường buôn hàng bên này như rap thiên hà quê nhà còn quá xa Nhiều đêm ngồi roll điếu K mama à đừng xót xa Lang thang không về nhà đôi chân đang đi tìm dollar"
+        android:ellipsize="end"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/btn_xem_chi_tiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageTV"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toEndOf="@id/imageTV"
+        android:background="#e51515"
+        android:text="  Xem chi tiết  "
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+</RelativeLayout>

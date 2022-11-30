@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/lockscreen">
+
+
+
+
+    <TextView
+        android:id="@+id/textview_dk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Đăng kí Sân chơi giới trẻ"
+        android:textColor="#293333"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/textbox_dk_ten_dang_nhap"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/forget"
+        android:drawableStart="@drawable/ic_person"
+        android:hint=" Tên đăng nhập"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColor="#722F37"
+        android:textColorHint="#7E7C73"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        android:layout_below="@id/textview_dk"
+        android:layout_centerHorizontal="true"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/textbox_dk_ten_nguoi_dung"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/forget"
+        android:drawableStart="@drawable/ic_person"
+        android:hint=" Tên người sử dụng"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColor="#722F37"
+        android:textColorHint="#7E7C73"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        android:layout_below="@id/textbox_dk_ten_dang_nhap"
+        android:layout_centerHorizontal="true"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/textbox_dk_mat_khau"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/forget"
+        android:drawableStart="@drawable/ic_security"
+        android:hint=" Mật khẩu"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textColor="#722F37"
+        android:textColorHint="#7E7C73"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        android:layout_below="@id/textbox_dk_ten_nguoi_dung"
+        android:layout_centerHorizontal="true"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/textbox_dk_re_mat_khau"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/forget"
+        android:drawableStart="@drawable/ic_baseline_key_24"
+        android:hint=" Nhập lại Mật khẩu"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textColor="#722F37"
+        android:textColorHint="#7E7C73"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textbox_dk_mat_khau"
+        android:layout_centerHorizontal="true"
+        ></EditText>
+
+    <Button
+        android:id="@+id/btn_dang_ki_main"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="Đăng Kí Ngay"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:layout_below="@id/textbox_dk_re_mat_khau"
+        android:layout_centerHorizontal="true"
+        ></Button>
+
+    <TextView
+        android:id="@+id/dang_nhap_ngay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Bạn đã có tài khoản? Đăng nhập ngay"
+        android:textColor="#293333"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@id/btn_dang_ki_main"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_news"
+        android:title="Tin tức"
+        android:icon="@drawable/nav_newspaper48px"
+        />
+
+    <item
+        android:id="@+id/nav_forum"
+        android:title="Diễn đàn"
+        android:icon="@drawable/nav_feed48px"
+        />
+
+    <item
+        android:id="@+id/nav_follow"
+        android:title="Bài của tôi"
+        android:icon="@drawable/nav_star48px"
+        />
+
+    <item
+        android:id="@+id/nav_account"
+        android:title="Cá nhân"
+        android:icon="@drawable/nav_account_circle48px"
+        />
+</menu>
